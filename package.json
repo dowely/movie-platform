@@ -1,0 +1,16 @@
+{
+  "name": "movie-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Full-stack web application for exploring the cinema world.",
+  "author": "Marcin Ogar",
+  "repository": "https://github.com/dowely/movie-platform.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "typescript": "^5.8.3"
+  }
+}
