@@ -1,6 +1,6 @@
 # movie-platform
 
-This is a full-stack web application for exploring the cinema world.
+Full-stack web application for exploring the cinema world.
 
 ## MVP 1:
 

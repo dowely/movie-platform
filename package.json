@@ -1,0 +1,37 @@
+{
+  "name": "movie-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Full-stack web application for exploring the cinema world.",
+  "author": "Marcin Ogar",
+  "repository": "https://github.com/dowely/movie-platform.git",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn clean && tsc --build tsconfig.server.json && tsx node_modules/webpack-cli/bin/cli.js",
+    "dev": "tsx watch --clear-screen=false --include ./src/server/**/* preview.ts",
+    "start": "node dist/start.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/connect-livereload": "^0.6.3",
+    "@types/express": "^5.0.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/livereload": "^0.9.5",
+    "@types/webpack": "^5.28.5",
+    "connect-livereload": "^0.6.1",
+    "fs-extra": "^11.3.0",
+    "livereload": "^0.9.3",
+    "rimraf": "^6.0.1",
+    "ts-loader": "^9.5.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
