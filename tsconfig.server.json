@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "strict": true,
+    "outDir": "dist",
+    "rootDir": "src/server",
+    "target": "ES2022",
+    "module": "CommonJS"
+  },
+  "include": ["src/server/**/*.ts"],
+  "exclude": ["node_modules", "dist", "src/client"]
+}
