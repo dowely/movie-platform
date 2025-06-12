@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "yarn clean && tsc --build tsconfig.server.json && tsx node_modules/webpack-cli/bin/cli.js",
+    "build": "yarn clean && tsc --build tsconfig.json && tsx node_modules/webpack-cli/bin/cli.js",
     "dev": "tsx watch --clear-screen=false --include ./src/server/**/* preview.ts",
     "start": "node dist/start.js"
   },
@@ -16,7 +16,8 @@
     "chalk": "^5.4.1",
     "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "vue": "^3.5.16"
   },
   "devDependencies": {
     "@types/connect-livereload": "^0.6.3",
@@ -24,14 +25,26 @@
     "@types/fs-extra": "^11.0.4",
     "@types/livereload": "^0.9.5",
     "@types/webpack": "^5.28.5",
+    "@types/webpack-env": "^1.18.8",
+    "@types/webpack-hot-middleware": "^2.25.9",
     "connect-livereload": "^0.6.1",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
     "fs-extra": "^11.3.0",
     "livereload": "^0.9.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "node-sass": "^9.0.0",
     "rimraf": "^6.0.1",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
     "ts-loader": "^9.5.2",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
+    "vue-loader": "^17.4.2",
     "webpack": "^5.99.9",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-middleware": "^7.4.2",
+    "webpack-hot-middleware": "2.26.1",
+    "webpack-manifest-plugin": "^5.0.1"
   }
 }

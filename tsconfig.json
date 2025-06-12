@@ -2,11 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "strict": true,
     "outDir": "dist",
     "rootDir": "src/server",
     "target": "ES2022",
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "types": ["node", "webpack-env"]
   },
   "include": ["src/server/**/*.ts"],
   "exclude": ["node_modules", "dist", "src/client"]

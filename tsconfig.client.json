@@ -5,7 +5,8 @@
     "strict": true,
     "rootDir": "src/client",
     "target": "ES2022",
-    "module": "ES2022"
+    "module": "ES2022",
+    "moduleResolution": "bundler"
   },
   "include": ["src/client/**/*.ts"],
   "exclude": ["node_modules", "dist", "src/server"]
